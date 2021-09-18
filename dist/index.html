@@ -1,25 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Font Connection -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- /Font -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
-    <title>D$ocument</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>John's portfolio</title>
 </head>
+
 <body>
-    <header class="header">
-    <h1>Shapka sayta</h1>
-    <p>whaghgggt</p>
-    <p>3rd</p>
-    <p>4rtyyfdgdfgh</p>
-</header>
-    <main class="main">
-        <div class="p">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, fugiat.</p>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li class="menu__item"><a href="#">Works</a></li>
+                <li class="menu__item"><a href="#">Blog</a></li>
+                <li class="menu__item"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="first_block">
+                <div class="first_block__content">
+                    <h1>Hi, I am John, Creative Technologist</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quae placeat
+                        fuga aperiam cumque, consequuntur eius repellendus commodi, suscipit rerum, numquam tenetur?
+                        Mollitia!</p>
+                    <button>Download Resume</button>
+                </div>
+                <img src="../img/portrait.png" alt="">
+            </div>
+            <div class="second_block">
+                <div class="container">
+                    <div class="second_block__head">
+                        <span>Recent posts</span>
+                        <a href="#">View all</a>
+                    </div>
+                    <div class="second_block__main">
+                        <div class="second_block__main__item">
+                            <h2>Making a design system from scratch</h2>
+                            <div class="second_block__main__item__content">
+                                <p>18 Sep 2021 <span>|</span> Design, Pattern</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit libero
+                                    dolore, tenetur sequi magni dolores distinctio natus veniam nesciunt dicta eveniet
+                                    deserunt tempora recusandae et, ducimus esse, mollitia odit excepturi.</p>
+                            </div>
+                        </div>
+                        <div class="second_block__main__item">
+                            <h2>Creating pixel perfect icons in Figma</h2>
+                            <div class="second_block__main__item__content">
+                                <p>18 Sep 2021 <span>|</span> Figma, Icon Design</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit libero
+                                    dolore, tenetur sequi magni dolores distinctio natus veniam nesciunt dicta eveniet
+                                    deserunt tempora recusandae et, ducimus esse, mollitia odit excepturi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
+
+
     <script src="js/script.js"></script>
 </body>
+
 </html>
