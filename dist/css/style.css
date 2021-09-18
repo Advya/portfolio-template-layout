@@ -3,10 +3,11 @@
   padding: 0px;
   text-decoration: none;
   list-style: none;
+  font-family: 'Heebo', sans-serif;
 }
 
 body{
-  font-family: 'Heebo', sans-serif;
+  
   background: #fff;
 }
 a{
@@ -52,13 +53,139 @@ a{
   font-size: 44px;
   line-height: 60px;
 }
+.first_block__content p{ 
+  font-size: 16px;
+  line-height: 23px;
+  margin: 40px 0;
+}
+.first_block__content button{ 
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  background: #FF6464;
+  border-radius: 2px;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 0 70px 0;
+}
 .second_block {
+  background: #EDF7FA;
 }
 .second_block__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+.second_block__head span{
+  font-size: 22px;
+  line-height: 60px;
+  margin: 7px 0 2px 0;
+}
+.second_block__head a{
+  font-size: 16px;
+  line-height: 23px;  
+  color: #00A8CC;  
+}
+
 .second_block__main {
+  display: flex;
+  padding-bottom: 32px;
 }
 .second_block__main__item {
+  background: #fff;
+  margin-right: 20px;
+  padding: 24px 0 0 23px;
 }
-.second_block__main__item__content {
+.second_block__main__item:last-child {  
+  margin: 0;
+}
+.second_block__main__item h2{
+  font-size: 26px;
+  line-height: 38px;
+  margin-bottom: 17px;
+}
+.second_block__main__item__content {  
+}
+.second_block__main__item__content p{
+  font-size: 18px;
+  line-height: 26px;  
+}
+#date{
+  padding-bottom: 11px;
+}
+#straight{
+  margin: 0 20px;
+}
+#text{
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 20px;
+}
+
+.third_block {
+}
+.third_block__featured {
+  font-size: 22px;
+  line-height: 60px;
+  margin: 15px 0 0px 0;
+}
+.third_block__cards {
+ 
+}
+.card:first-child {    
+  margin-top:22px;
+}
+.card {
+  display: flex;  
+  margin: 35px 0;
+}
+hr{
+  border: 1px solid #E0E0E0;
+}
+.card img{
+  width: 246px;
+  border-radius: 6px;
+}
+.card_content {
+  padding: 0 0 0 18px;
+}
+.card_content h2{
+  margin-top: -8px;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 44px;
+}
+.card_content div{
+  display: flex;  
+}
+.card_content div span{
+  margin: 20px 26px 22px 0px;  
+  padding: 0px 10px 0 10px;
+  color: #fff;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 29px;
+  background-color: #142850;
+  border-radius: 16px;
+}
+.card_content div p{
+  padding: 20px 26px 22px 0px;  
+  color: #8695A4;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 29px;
+}
+.card_content p{
+  font-size: 16px;
+  line-height: 23px;
+}
+
+footer{
+  margin-top: 50px;
+  margin: 0 auto;
+}
+footer img{
+  width: 100%; 
+  max-width: 1152px;   
 }
