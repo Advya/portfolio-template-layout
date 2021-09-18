@@ -7,13 +7,16 @@
 }
 
 body{
-  
+  min-width: 320px;
   background: #fff;
 }
 a{
   color: #000;
 }
 
+.header__burger {
+  display: none;
+}
 .menu {
   margin: 27px 60px;
 }
@@ -28,16 +31,19 @@ a{
   color: #000;
   font-weight: 500;
 }
+
+
 .container {
   display: flex;
   flex-direction: column;
   max-width: 856px;
-  margin: 0 auto;
+  margin: 0 auto;  
 }
 .first_block {
   margin: 126px 0 0 0;
   display: flex;
 }
+
 .first_block img {
   border: none;
   border-radius: 50%;
@@ -69,6 +75,31 @@ a{
   padding: 10px 20px;
   margin: 0 0 70px 0;
 }
+
+@media (max-width: 767px){
+  .container{
+    max-width: 100%;
+  }
+  .first_block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+  .first_block__content{
+    text-align: center;
+    margin: 0 auto;    
+    order: 2;
+  }
+  
+  .first_block img{
+    order: 1;
+    margin: 0 auto;
+    
+  }
+}
+
+
 .second_block {
   background: #EDF7FA;
 }
@@ -123,6 +154,37 @@ a{
   margin-bottom: 20px;
 }
 
+@media (max-width: 767px){
+  .second_block{
+    background-color: cyan;
+  }
+  .second_block__head span{    
+    margin: 0 auto;
+  }
+  .second_block__head a{
+    display: none;
+  }
+  .second_block__main{
+    display: flex;
+    flex-wrap: wrap;    
+    margin: 0 auto;
+    padding-bottom: 38px;
+  }
+  .second_block__main__item{
+    margin: 0 10px 17px;
+    /* padding: 0 20px; */
+  } 
+  .second_block__main__item:last-child {  
+    margin: 0 10px 0px;
+  }
+  .second_block__main__item h2{
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+}
+
+
 .third_block {
 }
 .third_block__featured {
@@ -145,7 +207,7 @@ hr{
 }
 .card img{
   width: 246px;
-  border-radius: 6px;
+  border-radius: 10px;
 }
 .card_content {
   padding: 0 0 0 18px;
@@ -181,6 +243,40 @@ hr{
   line-height: 23px;
 }
 
+@media (max-width: 767px){
+  .third_block__featured{
+    margin: 0 auto;
+  }
+  .card:first-child{
+    margin: 0;
+  }
+  .card{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 15px;
+  }
+  .card img{
+    width: 100%; 
+    margin: 0 auto;
+    border-radius: 25px;
+  }
+  .card_content{
+    text-align: left;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .card_content h2{
+    margin-top: 18px;
+    font-size: 26px;
+    line-height: 30px;
+  }
+  hr{
+    margin: 20px;
+  }
+
+
+}
+
 footer{
   margin-top: 50px;
   margin: 0 auto;
@@ -188,4 +284,11 @@ footer{
 footer img{
   width: 100%; 
   max-width: 1152px;   
+}
+
+@media (max-width:767px){
+  footer img{
+    width: 100%;
+    margin: 0 auto;
+  }
 }
